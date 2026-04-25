@@ -1,31 +1,35 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	start :=1
+	// while loop
 
-	for i:=0;i<10;i++{
-		fmt.Println(i + start)
+	// i := 1
+
+	// for i < 10 {
+	// 	fmt.Println(i)
+	// 	i++
+
+	// }
+
+	//infinite Loop
+
+	// for  {
+	// 	fmt.Println("Hello World")
+	// }
+
+	// Classif for loop
+
+	// for i:=1 ; i < 10; i++ {
+	// 	fmt.Println(i)
+	// }
+
+	// range loop
+
+	for i:= range 10 {
+	fmt.Println(i)
 	}
-
-	// loop through an array
-	arr := []string{"apple", "banana", "watermelon"}
-
-	for i:=00;i<len(arr);i++ {
-		fmt.Println(arr[i])
-	}
-
-	//while loops in go => we donot have while loops in go but we can use for loop to achieve the same result
-
-	for start < 100 {
-		start += start
-
-		if start == 64{
-			break
-		}
-		
-		fmt.Println(start)
-	}
-
 }
